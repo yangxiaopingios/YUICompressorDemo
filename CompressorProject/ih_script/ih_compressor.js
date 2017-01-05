@@ -6,7 +6,7 @@ var compressor = require('yuicompressor');
 var fs = require( "fs" );
 var path = require('path');
 
-compressor.compress(path.resolve('./bootstrap.css'), {
+compressor.compress(path.resolve('./bootstrap.js'), {
     // defaults to 'utf8' 被压缩文件编码
     charset: 'utf8',
     // defaults to 'js'    被压缩文件类型
@@ -21,7 +21,7 @@ compressor.compress(path.resolve('./bootstrap.css'), {
     console.log(err);
     //data  压缩完的字符串
     if(!err){
-        let result = await ih_writeFile('bootstrap.js', data);
+        let result = await ih_writeFile('bootstrap.min.js', data);
         if(result){
             console.log('压缩成功啦');
         }
@@ -32,8 +32,7 @@ compressor.compress(path.resolve('./bootstrap.css'), {
 
 function ih_writeFile(fileName, data){
     return new Promise(function (resolve, reject) {
-        var fileNameArr = fileName.split('.')
-        fs.writeFile(path.resolve('./' + fileNameArr[0] + '.min.' + fileNameArr[1]), data, function(err){
+        fs.writeFile(path.resolve('./' + fileName), data, function(err){
             if (err){
                 console.log(err);
                 reject (false);
