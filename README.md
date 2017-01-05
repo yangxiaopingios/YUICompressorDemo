@@ -1,7 +1,7 @@
 # YUICompressorDemo
 ___
 
-# 使用方法
+# 运行步骤
 ___
 -  下载工程
 -  cd 工程目录/CompressorProject
