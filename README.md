@@ -5,6 +5,6 @@ ___
 ___
 -  下载工程
 -  cd 下载目录/YUICompressorDemo-master/CompressorProject
--  npm install
+-  npm i
 -  cd 下载目录//YUICompressorDemo-master/CompressorProject/ih_script
 -  runkoa ih_compressor.js
