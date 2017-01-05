@@ -13,7 +13,7 @@ compressor.compress(path.resolve('./bootstrap.js'), {
     type: 'js',
     // defaults to 'false'
     //当为false 被压缩文件自动缩短 JavaScript 文件中的变量名。
-    nomunge: true,
+    // nomunge: false,
     //多长内容换行
     'line-break': 80
 }, async function(err, data, extra) {
