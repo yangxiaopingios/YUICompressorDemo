@@ -11,9 +11,8 @@ compressor.compress(path.resolve('./bootstrap.js'), {
     charset: 'utf8',
     // defaults to 'js'    被压缩文件类型
     type: 'js',
-    // defaults to 'false'
-    //当为false 被压缩文件自动缩短 JavaScript 文件中的变量名。
-    // nomunge: false,
+    //注释nomunge 选项，否则 YUI Compressor 将自动缩短 JavaScript 文件中的变量名
+    // nomunge: true,
     //多长内容换行
     'line-break': 80
 }, async function(err, data, extra) {
