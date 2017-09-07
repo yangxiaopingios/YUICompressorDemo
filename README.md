@@ -8,3 +8,5 @@ ___
 -  npm i
 -  cd 下载目录//YUICompressorDemo-master/CompressorProject/ih_script
 -  runkoa ih_compressor.js
+
+[博客分析doc](http://www.jianshu.com/p/20c2bd6e497f)
